@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Resume</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'font/css/fontello.css' %}" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="index"><img src="/static/img/home.jpg" alt=""></a>
+      <ul class="nav nav-collapse pull-right">
+        <li><a href="about"><i class="icon-user"></i> About</a></li>
+        <li><a href="skills"><i class="icon-trophy"></i> Skills</a></li>
+        <li><a href="work"><i class="icon-picture"></i> Work</a></li>
+        <li><a href="resume" class="active"><i class="icon-doc-text"></i> Resume</a></li>
+      </ul>
+      <div class="nav-collapse collapse"></div>
+    </div>
+  </div>
+</div>
+<div class="container resume">
+  <h2>My Resume</h2>
+  <h3>You can download my resume for your reference and I hope that we will meet very soon! :)</h3>
+  <div class="btn-center"> <a href="https://docs.google.com/document/d/10o8R_zg4JV7NgUUG59LNaLC1gH3r8a9qThp4OoDf5VU/edit?usp=sharing" class="hire-me"><i class="icon-download"></i> Download Resume</a>
+    <h2>125kb</h2>
+  </div>
+</div>
+<div class="row social">
+  <ul class="social-icons">
+    <!-- <li><a href="#"><img src="{% static 'img/fb.png' %}" alt=""></a></li>
+    <li><a href="#"><img src="{% static 'img/tw.png' %}" alt=""></a></li> -->
+    <li><a href="mailto: raj_suman@hotmail.com" target="_blank"><img src="{% static 'img/email.png' %}" alt=""></a></li>
+    <li><a href="https://www.instagram.com/i_.m_sumann/" target="_blank"><img src="{% static 'img/insta.png' %}" alt=""></a></li>
+    <li><a href="https://www.linkedin.com/in/suman-raj-1708/" target="_blank"><img src="{% static 'img/linkdin.png' %}" alt=""></a></li>
+    <!-- <li><a href="#"><img src="{% static 'img/dr.png' %}" alt=""></a></li> -->
+  </ul>
+</div>
+<div class="footer">
+  <div class="container">
+    <p class="pull-left"><a href="">&copy; All Rights Reserved (Suman Raj)</a></p>
+    <p class="pull-right"><a href="#myModal" role="button" data-toggle="modal"> <i class="icon-mail"></i> CONTACT</a></p>
+  </div>
+</div>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel"><i class="icon-mail"></i> Contact Me</h3>
+  </div>
+  <div class="modal-body">
+    <form action="#">
+      <input type="text" placeholder="Yopur Name">
+      <input type="text" placeholder="Your Email">
+      <input type="text" placeholder="Website (Optional)">
+      <textarea rows="3" style="width:80%"></textarea>
+      <br>
+      <button type="submit" class="btn btn-large"><i class="icon-paper-plane"></i> SUBMIT</button>
+    </form>
+  </div>
+</div>
+<script src="{% static 'js/jquery-1.10.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script>
+$('#myModal').modal('hidden')
+</script>
+</body>
+</html>

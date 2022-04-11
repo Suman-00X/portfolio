@@ -1,0 +1,199 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Education</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'font/css/fontello.css' %}" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+<style>
+  .div1{
+      float: left;
+  }
+
+  .div2{
+      float: right;
+  }
+
+  .college {
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid rgba(179, 163, 21, 0.829); 
+    margin-top: 60px
+  }
+
+  .college td {
+
+    border: 3px solid rgba(179, 163, 21, 0.829); 
+ 
+  }
+</style>
+
+</head>
+<body>
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand" href="index"><img src="/static/img/home.jpg" alt=""></a>
+      <ul class="nav nav-collapse pull-right">
+        <li><a href="about" class="active"><i class="icon-user"></i> About</a></li>
+        <li><a href="skills"><i class="icon-trophy"></i> Skills</a></li>
+        <li><a href="work"><i class="icon-picture"></i> Work</a></li>
+        <li><a href="resume"><i class="icon-doc-text"></i> Resume</a></li>
+      </ul>
+      <div class="nav-collapse collapse"></div>
+    </div>
+  </div>
+</div>
+<div class="table" , allignment="center">
+       
+  <table class="college" > 
+    <thead>
+        <th style="text-align:center">COLLEGE  &nbsp; EDUCATION</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="text-align:center "><a href="http://www.iiitt.ac.in/" target="_blank">Indian Institute of Information Technology, TIRUCHIRAPPALLI</a></td>
+            
+        </tr>
+        <tr>
+            <td style="text-align:center">(B-tech 2020-24)
+                <h3>Electronics and Communication Engineering</h3>
+                 Grade : 8.14 cgpa till 3rd semester</td>
+        </tr>
+
+        <tr> <td><div><h3 style="text-align:center">Courses Learned (_till now_)</h3>
+            <ul class="div1">
+                <li>C programming language</li>
+                <li>Digital Principles and System Design</li>
+                <li>Solid-State Devices</li>
+                <li>Electronic Circuits</li>
+                <li>Network Analysis & Synthesis</li>
+                <li>Signals and Systems</li>
+                <li>python programming language</li>
+                
+            </ul>
+            <ul class="div2">
+                <li>Data Structures and Algorithms</li>
+                <li>Computer Networks</li>
+                <li>Probability and Random Processes</li>
+                <li>Embedded Systems</li>
+                <li>Analog Integrated Circuits</li>
+                <li>Communication Theory</li>
+                <li>Control Systems</li>
+                
+            </ul>
+            
+        </div></td></tr>
+    </tbody>
+</table>
+
+<table class="college" > 
+  <thead>
+      <th style="text-align:center">INTERMEDIATE</th>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align:center "><strong>Sir GD Patliputra senior Secondry School, PATNA</strong><br>
+          <em>(Bihar School Examination Board)</em> </td>
+          
+      </tr>
+      <tr>
+          <td style="text-align:center">(Passing year 2019)<br>
+            <strong>Marks obtained : 80.6 %</strong>
+              </td>
+      </tr>
+
+      <tr> <td><div><h3 style="text-align:center">Subjects</h3>
+          <ul class="div1">
+              <li>Physics</li>
+              <li>Chemistry</li>
+              <li>Mathematics</li>
+          </ul>
+          <ul class="div2">
+              <li>English</li>
+              <li>Hindi</li>
+          </ul>
+          
+      </div></td></tr>
+  </tbody>
+</table>
+
+<table class="college" > 
+  <thead>
+      <th style="text-align:center">MATRICULATION</th>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align:center "><strong>Manas Bhoomi senior Secondry School, NALANDA</strong><br>
+          <em>(Central Board of Secondry Education)</em> </td>
+          
+      </tr>
+      <tr>
+          <td style="text-align:center">(Passing year 2017)<br>
+            <strong>Marks obtained : 10 cgpa</strong>
+              </td>
+      </tr>
+
+      <tr> <td><div><h3 style="text-align:center">Subjects</h3>
+          <ul class="div1">
+              <li>Science</li>
+              <li>Mathematics</li>
+              <li>Social Science</li>
+          </ul>
+          <ul class="div2">
+              <li>English</li>
+              <li>Sanskrit</li>
+          </ul>
+          
+      </div></td></tr>
+  </tbody>
+</table>
+
+
+
+</div>
+<div class="row social">
+  <ul class="social-icons">
+    <!-- <li><a href="#"><img src="{% static 'img/fb.png' %}" alt=""></a></li>
+    <li><a href="#"><img src="{% static 'img/tw.png' %}" alt=""></a></li> -->
+    <li><a href="mailto: raj_suman@hotmail.com" target="_blank"><img src="{% static 'img/email.png' %}" alt=""></a></li>
+    <li><a href="https://www.instagram.com/i_.m_sumann/" target="_blank"><img src="{% static 'img/insta.png' %}" alt=""></a></li>
+    <li><a href="https://www.linkedin.com/in/suman-raj-1708/" target="_blank"><img src="{% static 'img/linkdin.png' %}" alt=""></a></li>
+    <!-- <li><a href="#"><img src="{% static 'img/dr.png' %}" alt=""></a></li> -->
+  </ul>
+</div>
+<div class="footer" href="{% static 'css/bootstrap-responsive.css' %}" rel="stylesheet" type="text/css">
+  <div class="container">
+    <p class="pull-left"><a href="">&copy; All Rights Reserved (Suman Raj)</a></p>
+    <p class="pull-right"><a href="#myModal" role="button" data-toggle="modal"> <i class="icon-mail"></i> CONTACT</a></p>
+  </div>
+</div>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel"><i class="icon-mail"></i> Contact Me</h3>
+  </div>
+  <div class="modal-body">
+    <form action="#">
+      <input type="text" placeholder="Yopur Name">
+      <input type="text" placeholder="Your Email">
+      <input type="text" placeholder="Website (Optional)">
+      <textarea rows="3" style="width:80%"></textarea>
+      <br>
+      <button type="submit" class="btn btn-large"><i class="icon-paper-plane"></i> SUBMIT</button>
+    </form>
+  </div>
+</div>
+<script src="{% static 'js/jquery-1.10.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script>
+$('#myModal').modal('hidden')
+</script>
+</body>
+</html>
