@@ -30,9 +30,11 @@ urlpatterns = [
     path('resume', views.resume),
     path('education', views.education),
     path('about', views.about)
+]
 
     # url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
     # url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-urlpatterns=urlpatterns+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+# ]
+#  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+# urlpatterns=urlpatterns+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
  
